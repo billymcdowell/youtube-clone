@@ -1,10 +1,16 @@
-import NavBar from "@/components/NavBar";
+import Filters from "@/components/Filters";
+import Feed from "@/components/Feed";
+import { fetchFromAPI } from "@/utils/fetchFromApi";
 
-export default function Home() {
+export default async function Home() {
+  const videos = await fetchFromAPI(`search?part=snippet&q=all`);
+
   return (
     <>
-      <NavBar />
-      <main>Home</main>
+      <main>
+        <Filters />
+        <Feed videos={videos.items} />
+      </main>
     </>
   );
 }
