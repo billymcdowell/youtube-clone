@@ -1,8 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
 export default function VideoPlayer({ id }: any) {
-  return <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls />;
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return (
+    <>
+      {isClient ? (
+        <ReactPlayer url={`<https://www.youtube.com/watch?v=${id}>`} controls />
+      ) : null}
+    </>
+  );
 }
