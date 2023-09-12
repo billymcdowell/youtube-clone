@@ -8,7 +8,6 @@ function Search() {
   const [value, setValue] = useState<null | string>(null);
 
   const router = useRouter();
-  console.log(router);
 
   const handleValueChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setValue(e.target.value);

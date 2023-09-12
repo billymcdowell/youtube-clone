@@ -7,7 +7,7 @@ import Search from "./Search";
 
 function NavBar() {
   return (
-    <nav className="flex shadow-md items-center h-12">
+    <nav className="flex shadow-md items-center h-12 sticky top-0 z-10 bg-background">
       <div className="p-3">
         <Link href="/" style={{ width: "89px" }}>
           <Logo />

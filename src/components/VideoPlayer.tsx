@@ -16,7 +16,8 @@ export default function VideoPlayer({ id }: any) {
         <ReactPlayer
           autoPlay
           controls={true}
-          style={{ borderRadius: "1rem", overflow: "hidden" }}
+          playing={true}
+          style={{ overflow: "hidden" }}
           width={"100%"}
           height={"220px"}
           url={id ? `https://www.youtube-nocookie.com/embed/${id}` : ""}
