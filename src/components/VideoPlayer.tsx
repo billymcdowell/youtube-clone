@@ -13,7 +13,14 @@ export default function VideoPlayer({ id }: any) {
   return (
     <>
       {isClient ? (
-        <ReactPlayer url={`<https://www.youtube.com/watch?v=${id}>`} controls />
+        <ReactPlayer
+          autoPlay
+          controls={true}
+          style={{ borderRadius: "1rem", overflow: "hidden" }}
+          width={"100%"}
+          height={"220px"}
+          url={id ? `https://www.youtube-nocookie.com/embed/${id}` : ""}
+        />
       ) : null}
     </>
   );

@@ -6,10 +6,12 @@ export default async function Video({ params }: any) {
   const { items } = await fetchFromAPI(
     `videos?part=contentDetails%2Csnippet%2Cstatistics&id=${params.id}`
   );
-  console.log(items[0]);
+
+  if (!items) return;
+
   return (
     <>
-      <VideoPlayer id={params.id} />
+      <VideoPlayer id={items[0]?.id} />
       <h1>{items[0]?.snippet.title}</h1>
     </>
   );
