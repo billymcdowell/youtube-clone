@@ -32,25 +32,24 @@ export default async function Video({ params }: any) {
       : "0";
   };
 
-  const diff_minutes = (dt: Date) => {
-    const publishedAt = new Date(dt);
-    const today = new Date();
-    // let diff = (today.getTime() - publishedAt.getTime()) / 1000;
-    // diff /= 60;
-    // diff /= 60;
-    let diff = publishedAt;
-    return Math.abs(Math.round(diff));
-  };
+  // const diff_minutes = (dt: Date) => {
+  //   const publishedAt = new Date(dt);
+  //   const today = new Date();
+  //   let diff = (today.getTime() - publishedAt.getTime()) / 1000;
+  //   diff /= 60;
+  //   diff /= 60;
+  //   let diff = publishedAt;
+  //   return Math.abs(Math.round(diff));
+  // };
 
   return (
     <>
-      <div className="sticky top-0 aspect-video">
+      <div className="sticky top-0">
         <VideoPlayer id={items[0]?.id} />
       </div>
       <div className="p-4">
         <h1 className="font-extrabold text-lg">{items[0]?.snippet.title}</h1>
         <div className="flex gap-4">
-          {" "}
           <p className="text-xs text-gray-600">
             {`${viewCount(items[0]?.statistics.viewCount)} views`}
           </p>

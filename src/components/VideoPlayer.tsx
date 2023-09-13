@@ -14,12 +14,13 @@ export default function VideoPlayer({ id }: any) {
     <>
       {isClient ? (
         <ReactPlayer
+          className="aspect-video"
           autoPlay
           controls={true}
           playing={true}
           style={{ overflow: "hidden" }}
           width={"100%"}
-          height={"220px"}
+          height={"100%"}
           url={id ? `https://www.youtube-nocookie.com/embed/${id}` : ""}
         />
       ) : null}
