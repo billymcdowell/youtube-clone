@@ -11,7 +11,7 @@ function SearchInput({ onChange, onSubmit, ...props }: any) {
     <form onSubmit={(e) => onSubmit(e)} {...props}>
       <div className="w-full items-center flex justify-end">
         {isOpen ? (
-          <div className="w-full items-center flex rounded-lg bg-gray-200 focus-visible:ring-2 focus-visible:ring-offset-2">
+          <div className="w-full items-center flex rounded-lg bg-gray-200 dark:bg-gray-700 focus-visible:ring-2 focus-visible:ring-offset-2">
             <Input
               autoFocus
               className="border-none ring-offset-none bg-transparent focus-visible:ring-none focus-visible:ring-0 ring-transparent focus-visible:ring-offset-0"

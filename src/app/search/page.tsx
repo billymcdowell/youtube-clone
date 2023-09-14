@@ -1,5 +1,3 @@
-import Filters from "@/components/Filters";
-import NavBar from "@/components/NavBar";
 import Feed from "@/components/Feed";
 import { fetchFromAPI } from "@/utils/fetchFromApi";
 

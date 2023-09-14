@@ -21,10 +21,12 @@ function VideoCard({ video }: any) {
         className="aspect-video block overflow-hidden relative"
       >
         <Image
-          className="w-full absolute top-1/2 -translate-y-1/2"
-          src={video.snippet.thumbnails.high.url}
-          height="220"
-          width="390"
+          className="absolute top-1/2 -translate-y-1/2"
+          width="0"
+          height="0"
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+          src={video?.snippet?.thumbnails?.high?.url}
           alt="img"
         />
       </Link>
