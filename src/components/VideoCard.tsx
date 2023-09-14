@@ -26,7 +26,7 @@ function VideoCard({ video }: any) {
           height="0"
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
-          src={video.snippet.thumbnails.high.url}
+          src={video?.snippet?.thumbnails?.high?.url}
           alt="img"
         />
       </Link>

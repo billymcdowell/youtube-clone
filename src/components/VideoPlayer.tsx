@@ -11,7 +11,7 @@ export default function VideoPlayer({ id }: any) {
   }, []);
 
   return (
-    <>
+    <div className="min-h-[220px]">
       {isClient ? (
         <ReactPlayer
           className="aspect-video"
@@ -24,6 +24,6 @@ export default function VideoPlayer({ id }: any) {
           url={id ? `https://www.youtube-nocookie.com/embed/${id}` : ""}
         />
       ) : null}
-    </>
+    </div>
   );
 }

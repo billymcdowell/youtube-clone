@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
+import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "@/components/ui/logo";
 import Search from "./Search";
 
@@ -15,10 +15,13 @@ function NavBar() {
       </div>
       <div className="flex flex-grow items-center justify-end">
         <Search />
-        <div>
+        {/* <div>
           <Avatar className="">
             <AvatarFallback>WM</AvatarFallback>
           </Avatar>
+        </div> */}
+        <div>
+          <ThemeSwitcher />
         </div>
       </div>
     </nav>

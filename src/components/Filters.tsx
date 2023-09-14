@@ -15,7 +15,7 @@ function Filters() {
   return (
     <>
       <div className="px-3 py-2 flex gap-3 h-12 overflow-scroll no-scrollbar">
-        <div className="bg-gray-100 px-2 py-1 flex justify-center items-center rounded">
+        <div className="bg-gray-100 dark:bg-gray-800 px-2 py-1 flex justify-center items-center rounded">
           <Compass size={24} strokeWidth={1} />
         </div>
         <Separator orientation="vertical" />
