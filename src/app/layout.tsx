@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} min-h-screen flex flex-col`}>
+      <body
+        className={`${roboto.className} min-h-screen flex flex-col max-w-[390px] m-auto`}
+      >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
           {children}
