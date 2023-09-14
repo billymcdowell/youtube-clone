@@ -17,10 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${roboto.className} min-h-screen flex flex-col max-w-[390px] m-auto`}
-      >
+    <html lang="en" className="max-w-[390px] m-auto">
+      <body className={`${roboto.className} min-h-screen flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
           {children}
