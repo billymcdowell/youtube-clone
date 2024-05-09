@@ -9,3 +9,7 @@ npm run install
 npm run dev
 
 ```
+
+# Screenshots
+
+<img src="https://raw.githubusercontent.com/billymcdowell/youtube-clone/dev/screenshots/image.png" width="200"/>
